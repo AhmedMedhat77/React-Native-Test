@@ -19,7 +19,11 @@ function App() {
           name="Home"
           getComponent={() => require("../screens/Home").default}
         />
-        <Stack.Screen name="About" component={About} />
+        <Stack.Screen
+          name="About"
+          component={About}
+          options={{ headerShown: true }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
