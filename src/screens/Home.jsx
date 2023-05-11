@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, SafeAreaView } from "react-native";
-
 import { images, SIZES } from "../constants";
 import Footer from "../layout/Footer";
 import Logo from "../components/Logo";
@@ -10,7 +9,7 @@ import GrayText from "../components/GrayText";
 import Button from "../components/Button";
 import FooterHelpers from "../components/FooterHelpers";
 import { GlobalStyles } from "../styles/Global";
-const Home = (props) => {
+const Home = () => {
   return (
     <SafeAreaView style={GlobalStyles.AndroidSafeArea}>
       <View style={GlobalStyles.contaier}>

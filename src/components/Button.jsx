@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
-import { COLORS, SIZES } from "../constants";
+import { COLORS } from "../constants";
 const Button = (props) => {
   return (
     <TouchableOpacity
