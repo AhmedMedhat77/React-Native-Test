@@ -9,8 +9,9 @@ import GrayText from "../components/GrayText";
 import CheckBox from "../components/CheckBox";
 import Footer from "../layout/Footer";
 import FooterHelpers from "../components/FooterHelpers";
-
+import { useNavigation } from "@react-navigation/native";
 const About = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={GlobalStyles.AndroidSafeArea}>
       <View style={GlobalStyles.contaier}>
@@ -19,7 +20,10 @@ const About = () => {
         </View>
         <StepCounter start="2" end="7" />
         <GrayText text="Please Read Our Terms And Conditions And Agree To Continue" />
-        <View style={styles.imageContainer}>
+        <View
+          style={styles.imageContainer}
+          onPress={() => navigation.navigate("Home")}
+        >
           <Image source={images.Terms} style={styles.img} resizeMode="cover" />
         </View>
 

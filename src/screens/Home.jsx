@@ -9,7 +9,9 @@ import GrayText from "../components/GrayText";
 import Button from "../components/Button";
 import FooterHelpers from "../components/FooterHelpers";
 import { GlobalStyles } from "../styles/Global";
+import { useNavigation } from "@react-navigation/native";
 const Home = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={GlobalStyles.AndroidSafeArea}>
       <View style={GlobalStyles.contaier}>
@@ -28,6 +30,7 @@ const Home = () => {
             width="63%"
             radius={SIZES.xLarge}
             padding={15}
+            onPress={() => navigation.navigate("About")}
           />
         </View>
         <FooterHelpers />
